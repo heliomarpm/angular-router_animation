@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'animated-routing'`, () => {
+  it(`should have as title 'router-animation'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('animated-routing');
+    expect(app.title).toEqual('router-animation');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('animated-routing app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('router-animation app is running!');
   });
 });
